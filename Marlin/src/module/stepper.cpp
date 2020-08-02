@@ -3027,6 +3027,12 @@ void Stepper::report_positions() {
 
       #elif HAS_MOTOR_CURRENT_PWM
 
+        timer_pause( PWM_TIMER_DEV ); 
+        timer_set_count( PWM_TIMER_DEV , 0);
+        timer_set_reload( PWM_TIMER_DEV , 0x0FFF);
+        timer_generate_update( PWM_TIMER_DEV );
+        timer_resume( PWM_TIMER_DEV );
+
         #if PIN_EXISTS(MOTOR_CURRENT_PWM_X)
           SET_PWM(MOTOR_CURRENT_PWM_X_PIN);
         #endif
