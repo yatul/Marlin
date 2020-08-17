@@ -338,6 +338,7 @@ namespace Language_ru {
   PROGMEM Language_Str MSG_VB_JERK                         = _UxGT("V") LCD_STR_B _UxGT("-рывок");
   PROGMEM Language_Str MSG_VC_JERK                         = _UxGT("V") LCD_STR_C _UxGT("-рывок");
   PROGMEM Language_Str MSG_VE_JERK                         = _UxGT("Ve-рывок");
+
   #if LCD_WIDTH > 21
     PROGMEM Language_Str MSG_JUNCTION_DEVIATION            = _UxGT("Отклонение узла");
   #else
@@ -486,6 +487,8 @@ namespace Language_ru {
   PROGMEM Language_Str MSG_FILAMENTCHANGE                  = _UxGT("Смена филамента");
   PROGMEM Language_Str MSG_FILAMENTCHANGE_E                = _UxGT("Смена филамента *");
   PROGMEM Language_Str MSG_FILAMENTLOAD                    = _UxGT("Загрузить филамент");
+  PROGMEM Language_Str MSG_FILAMENTUNLOAD                  = _UxGT("Выгрузить филамент");
+  
   #if LCD_WIDTH > 21
     PROGMEM Language_Str MSG_FILAMENTLOAD_E                = _UxGT("Загрузить филамент *");
     PROGMEM Language_Str MSG_FILAMENTUNLOAD_E              = _UxGT("Выгрузить филамент *");
