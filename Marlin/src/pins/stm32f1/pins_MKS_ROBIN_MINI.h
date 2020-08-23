@@ -108,6 +108,8 @@
 #define POWER_LOSS_PIN                      PA2   // PW_DET
 #define PS_ON_PIN                           PA3   // PW_OFF
 
+
+#define SERVO0_PIN                          PB2 //BLTouch
 //#define LED_PIN                           PB2
 
 //
